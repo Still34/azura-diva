@@ -1,0 +1,6 @@
+[submodule "DivaModLoader"]
+	path = DivaModLoader
+	url = https://github.com/blueskythlikesclouds/DivaModLoader.git
+[submodule "Dependencies/DivaModLoader"]
+	path = Dependencies/DivaModLoader
+	url = https://github.com/blueskythlikesclouds/DivaModLoader.git
