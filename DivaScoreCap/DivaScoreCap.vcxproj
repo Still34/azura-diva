@@ -120,7 +120,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>E:\repos\steamworks_sdk_153a\sdk\public\steam;E:\repos\DivaModLoader\Dependencies\Detours\include;E:\repos\DivaModLoader\Dependencies\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\steamworks_sdk_153a\sdk\public\steam;..\..\DivaModLoader\Dependencies\Detours\include;..\..\DivaModLoader\Dependencies\</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -142,7 +142,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>E:\repos\steamworks_sdk_153a\sdk\public\steam;E:\repos\DivaModLoader\Dependencies\Detours\include;E:\repos\DivaModLoader\Dependencies\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\steamworks_sdk_153a\sdk\public\steam;..\..\DivaModLoader\Dependencies\Detours\include;..\..\DivaModLoader\Dependencies\</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
