@@ -72,12 +72,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ExternalIncludePath>..\Dependencies\DivaModLoader\Dependencies;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>..\..\steamworks_sdk_153a\sdk\public\steam;..\Dependencies\DivaModLoader\Dependencies\Detours\include;..\Dependencies\DivaModLoader\Dependencies\;..\Dependencies\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>..\Dependencies\DivaModLoader\Dependencies\Detours\lib;..\..\steamworks_sdk_153a\sdk\redistributable_bin\win64\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ExternalIncludePath>..\Dependencies\DivaModLoader\Dependencies;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>..\..\steamworks_sdk_153a\sdk\public\steam;..\Dependencies\DivaModLoader\Dependencies\Detours\include;..\Dependencies\DivaModLoader\Dependencies\;..\Dependencies\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>..\Dependencies\DivaModLoader\Dependencies\Detours\lib;..\..\steamworks_sdk_153a\sdk\redistributable_bin\win64\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -157,10 +157,12 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Dependencies\SigScan.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Dependencies\SigScan.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Mod.cpp" />
     <ClCompile Include="pch.cpp">
