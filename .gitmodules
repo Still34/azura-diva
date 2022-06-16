@@ -4,3 +4,6 @@
 [submodule "Dependencies/DivaModLoader"]
 	path = Dependencies/DivaModLoader
 	url = https://github.com/blueskythlikesclouds/DivaModLoader.git
+[submodule "Dependencies/simdjson"]
+	path = Dependencies/simdjson
+	url = https://github.com/simdjson/simdjson.git
