@@ -75,6 +75,7 @@ HOOK(size_t, __fastcall, _fwriteTo, sig_fwrite, const void* buf, size_t size, si
             TryPrintToConsole("[DivaBackup] Failed to create %s.\n", fsTargetAbsolutePath.string().c_str());
         }
     }
+    CoTaskMemFree(pwProfilePath);
     return original_fwriteTo(buf, size, n, fp);
 };
 
