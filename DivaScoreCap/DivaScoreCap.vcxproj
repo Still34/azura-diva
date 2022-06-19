@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ExternalIncludePath>..\..\steamworks_sdk_153a\sdk\public\steam;..\Dependencies\DivaModLoader\Dependencies\Detours\include;..\Dependencies\DivaModLoader\Dependencies\;..\Dependencies\;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>..\Dependencies\DivaModLoader\Dependencies\Detours\lib;..\..\steamworks_sdk_153a\sdk\redistributable_bin\win64\;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>..\Dependencies\DivaModLoader\Dependencies\Detours\include;..\Dependencies\DivaModLoader\Dependencies\;..\Dependencies\;..\Dependencies\simdjson\include\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>..\Dependencies\DivaModLoader\Dependencies\Detours\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ExternalIncludePath>..\..\steamworks_sdk_153a\sdk\public\steam;..\Dependencies\DivaModLoader\Dependencies\Detours\include;..\Dependencies\DivaModLoader\Dependencies\;..\Dependencies\;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>..\Dependencies\DivaModLoader\Dependencies\Detours\lib;..\..\steamworks_sdk_153a\sdk\redistributable_bin\win64\;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>..\Dependencies\DivaModLoader\Dependencies\Detours\include;..\Dependencies\DivaModLoader\Dependencies\;..\Dependencies\;..\Dependencies\simdjson\include\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>..\Dependencies\DivaModLoader\Dependencies\Detours\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -156,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Dependencies\SigScan.h" />
+    <ClInclude Include="Diva.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
