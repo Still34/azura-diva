@@ -30,6 +30,10 @@ bool TryPrintToConsole(const char* _Format, ...) {
 }
 
 HOOK(size_t, __fastcall, _fwriteTo, sig_fwrite, const void* buf, size_t size, size_t n, FILE* fp) {
+    if (size > 102400) {
+        return original_fwriteTo(buf, size, n, fp);
+    }
+
     std::string targetFilename;
     std::filesystem::path fsTargetAbsolutePath;
     PWSTR pwProfilePath;
