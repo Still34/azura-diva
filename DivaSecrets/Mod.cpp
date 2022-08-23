@@ -10,14 +10,14 @@ void* EncryptSaveData = sigScan(
 );
 
 HOOK(int, __fastcall, _GetKey, EncryptSaveData, DWORD* a1, __int64 a2, int a3, unsigned __int8** a4, char* a5) {
-    HANDLE hConsoleWindow = GetConsoleWindow();
-    if (hConsoleWindow) {
-        printf("[DivaSecrets] Obtained key \"%s\"\n", *a1);
-    }
+    printf("[DivaSecrets] Obtained key \"%s\"\n", *a1);
+
     return original_GetKey(a1, a2, a3, a4, a5);
 };
 
 extern "C" __declspec(dllexport) void Init()
 {
-    INSTALL_HOOK(_GetKey);
+    FILE* console;
+    freopen_s(&console, "CONOUT$", "w", stdout);
+    if (console) INSTALL_HOOK(_GetKey);
 }
